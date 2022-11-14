@@ -7,6 +7,7 @@ function newAccount() {
 loginEl.classList.add('hide');
 signUpEl.classList.remove('hide');
 
+newAccount()
 getSignUp()
 }
 
