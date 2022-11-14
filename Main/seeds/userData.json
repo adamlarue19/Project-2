@@ -1,17 +1,22 @@
 [
   {
     "name": "Sal",
-    "weight": "sal@hotmail.com",
-    "length": "password12345"
+    "email": "sal@hotmail.com",
+    "password": "password12345"
   },
   {
     "name": "Sal",
-    "weight": "sal@hotmail.com",
-    "length": "password12345"
+    "email": "val@hotmail.com",
+    "password": "password12345"
   },
   {
     "name": "Sal",
-    "weight": "sal@hotmail.com",
-    "length": "password12345"
+    "email": "pal@hotmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "john",
+    "email": "john@hotmail.com",
+    "password": "password123"
   }
 ]
