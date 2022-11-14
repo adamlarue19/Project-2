@@ -25,6 +25,9 @@ Catch.init(
     date: {
       type: DataTypes.DATE
     },
+    location: {
+      type: DataTypes.STRING
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
