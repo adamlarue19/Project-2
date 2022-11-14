@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
 
 router.get('/catch/:id', async (req, res) => {
   try {
-    const catchData = await Project.findByPk(req.params.id, {
+    const catchData = await Catch.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -40,7 +40,7 @@ router.get('/catch/:id', async (req, res) => {
 
     const project = catchData.get({ plain: true });
 
-    res.render('project', {
+    res.render('Catch', {
       ...project,
       logged_in: req.session.logged_in
     });
