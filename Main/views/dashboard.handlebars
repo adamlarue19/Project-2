@@ -7,6 +7,30 @@
       {{{get_emoji}}}
       <a href="/project/{{project.id}}">{{project.name}}</a>
     </h2>
+
+<div class="topnav">
+  <a class="login-button" href="#login">Login</a>
+</div>
+    
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    
+  </body>
+</html>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap">
+</script>
+  <script src="/js/googlemaps.js"></script>
+
+
     <p>
       <span for="img" aria-label="money">💲</span>
       <!-- Pass needed_funding value to the helper function -->
