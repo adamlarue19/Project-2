@@ -19,42 +19,26 @@ header,
 }
 
 .containerL {
-  position: relative;
-  justify-content: center;
-  height: 450px;
+  height: 475px;
   width: 600px;
   margin-top: 75px;
-  margin-left: 325px;
   border-style: solid;
   border-color: black;
   padding: 20px;
 }
 
 .containerS {
-  position: relative;
-  justify-content: center;
-  height: 450px;
+  height: 475px;
   width: 600px;
   margin-top: 75px;
-  margin-left: 325px;
   border-style: solid;
   border-color: black;
   padding: 20px;
-  flex-wrap: wrap;
-  visibility: hidden;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-}
-
-.signUp {
-  visibility: inherit;
-}
-
-.hide {
-  display: none;
 }
 
 .btn1 {
@@ -65,13 +49,14 @@ h2 {
   margin-top: 50px;
 }
 
-#btn2 {
+.btn2 {
   display: flex;
   justify-content: center;
   background-color: grey;
   width: 175px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
+
 
 .loginBtn {
   position: relative;
