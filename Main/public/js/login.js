@@ -1,3 +1,21 @@
+const createAccount = document.getElementById('btn2');
+const loginEl = document.getElementById('containerL');
+const signUpEl = document.getElementById('containerS');
+
+
+function newAccount() {
+loginEl.classList.add('hide');
+signUpEl.classList.remove('hide');
+
+getSignUp()
+}
+
+function getSignUp() {
+
+}
+
+
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 

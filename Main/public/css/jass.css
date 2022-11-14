@@ -986,6 +986,7 @@ a:hover {
 
 .btn:hover {
   background-color: #cecece;
+  cursor: pointer;
 }
 
 .btn.btn-squared {
@@ -1011,6 +1012,7 @@ a:hover {
 .btn.btn-primary {
   background-color: #2d3e50;
   color: #d9e9e8;
+  display: flex;
 }
 
 .btn.btn-primary:hover {
@@ -1169,6 +1171,7 @@ form [type='radio'] {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  border-color: #000000
 }
 
 .container.container-fluid {

@@ -1,4 +1,5 @@
-header, .project:not(:last-child) {
+header,
+.project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
@@ -17,8 +18,66 @@ header, .project:not(:last-child) {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.containerL {
+  position: relative;
+  justify-content: center;
+  height: 450px;
+  width: 600px;
+  margin-top: 75px;
+  margin-left: 325px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+}
+
+.containerS {
+  position: relative;
+  justify-content: center;
+  height: 450px;
+  width: 600px;
+  margin-top: 75px;
+  margin-left: 325px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  flex-wrap: wrap;
+  visibility: hidden;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.signUp {
+  visibility: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  width: 175px;
+  margin-top: 50px;
+}
+
+#btn2 {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  width: 175px;
+  margin-top: 50px;
+}
+
+.loginBtn {
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.pointer {
+  cursor: pointer;
 }
