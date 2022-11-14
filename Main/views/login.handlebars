@@ -1,24 +1,32 @@
-<div class="row">
   <div class="col-md-6">
+    <div id='containerL' class="containerL">
     <h2>Login</h2>
 
     <form class="form login-form">
       <div class="form-group">
-        <label for="email-login">email:</label>
+        <label for="email-login">Email:</label>
         <input class="form-input" type="text" id="email-login" />
       </div>
       <div class="form-group">
-        <label for="password-login">password:</label>
+        <label for="password-login">Password:</label>
         <input class="form-input" type="password" id="password-login" />
       </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
+      <div class="form-group ">
+        <div class="row loginBtn">
+        <button id='toggle' class="btn btn1 pointer" type="submit">login</button>
+        <a href="../views/signup.handlebars">
+      <button id='btn2'class="btn  pointer" >Create Account</button>
+      </a>
+</div>
+</div>
+      </form>
   </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
+  </div>
 
+    <div class="hide col-md-6">
+        <div id='containerS' class="containerS">
+    <h2>Signup</h2>
+    <div class="container">
     <form class="form signup-form">
       <div class="form-group">
         <label for="name-signup">name:</label>
@@ -37,6 +45,7 @@
       </div>
     </form>
   </div>
+  </div>
 </div>
-
+</div>
 <script src="./js/login.js"></script>
