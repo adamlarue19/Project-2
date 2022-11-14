@@ -1,44 +1,31 @@
 <html lang='en'>
 
-  <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>HOT REELS</title>
-    <link rel='stylesheet' href='/css/jass.css' />
-    <link rel='stylesheet' href='/css/style.css' />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fund My Project!</title>
+ <link rel="stylesheet" href="/css/style.css">
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+ 
+</head>
 
-  <body>
-    <div class='flex-column justify-space-around'>
-      <header class='display-flex justify-space-between align-center p-2'>
-        <h1>
-          <span role='img' aria-label='money'>💸</span>
-          <a href='/'>Fund My Project!</a>
-        </h1>
-        <nav>
-          <!-- Conditionally render login or logout links -->
-          {{#if logged_in}}
-            <a href='/profile'>profile</a>
-            |
-            <button class='no-button' id='logout'>logout</button>
-          {{else}}
-            <a href='/login'>login</a>
-          {{/if}}
-        </nav>
-      </header>
-      <main class='container container-fluid mt-5'>
-        <!-- Render the sub layout -->
-        {{{body}}}
-      </main>
-      <footer>
+ <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
 
-      </footer>
-    </div>
-
-    <!-- Render script for logged in users only -->
-    {{#if logged_in}}
-      <script src='/js/logout.js'></script>
-    {{/if}}
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    
   </body>
-
+</html>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap">
+</script>
+  <script src="/js/googlemaps.js"></script>
+</body>
 </html>
