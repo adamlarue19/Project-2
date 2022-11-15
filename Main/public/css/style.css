@@ -1,6 +1,42 @@
 header,
 .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 70px;
+  background-color: #282828;
+}
+
+h1 {
+  position: absolute;
+  padding: 3px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 10px;
+  color: #82ca9f;
+}
+
+ul {
+  width: auto;
+  float: right;
+  margin-top: 8px;
+}
+
+li {
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+a {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.2vw;
+}
+
+a:hover {
+  color: #f0c330;
+  transition: 0.5s;
 }
 
 .no-button {
@@ -65,42 +101,4 @@ h2 {
 
 .pointer {
   cursor: pointer;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-.login-button {
-  float: right;
-  color: #c85b5b;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  width: 100px;
-  font-size: 14px;
 }
