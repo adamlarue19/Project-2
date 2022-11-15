@@ -1,0 +1,38 @@
+
+/* table{
+    border-collapse: collapse;
+    width:100%;
+}
+thead{
+    padding:20px; 
+    background-color: rgb(116, 136, 86);
+}
+th{
+    font-family: 'Syne', sans-serif;
+    color:white;
+    padding:25px;
+}
+th:nth-of-type(4){
+    max-width:300px;
+}
+tbody{
+    background-color: white;
+}
+.catch-data {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.10em;
+    border-bottom:2px solid rgb(238, 238, 238);
+}
+.catch-data > td{
+    padding:20px;
+    border:1px solid red;
+}
+td:nth-of-type(4){
+    max-width:300px;
+}
+td:nth-of-type(5){
+    text-align: center;
+}
+.delete-btn{
+    text-align: center;
+} */
