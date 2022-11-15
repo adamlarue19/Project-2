@@ -76,6 +76,62 @@ h2 {
   justify-content: center;
 }
 
+.table-header {
+  display: flex;
+  justify-content: left;
+  margin-left: 60px;
+}
+
+.content-table {
+  width: 500px;
+  border-collapse: collapse;
+  margin-left: 60px;
+}
+
+.content-table thead {
+  background-color: #488dad;
+}
+
+.content-table thead tr th {
+  font-size: 22px;
+  font-weight: medium;
+  letter-spacing: 0.35px;
+  color: white;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid #dee2e685;
+}
+
+.content-table tbody tr td {
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: #065b83;
+  background-color: #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+thead {
+  display: flexbox;
+  align-items: center;
+  border: 1px solid #dee2e685;
+  text-align: center;
+}
+tbody {
+  display: flexbox;
+  align-items: center;
+  border: 1px solid #00000085;
+  text-align: center;
+}
+
+tbody th {
+  text-align: left;
+  text-decoration: underline;
+  font-size: large;
+}
+
 .btn1 {
   display: flex;
   justify-content: center;
@@ -100,7 +156,6 @@ h2 {
 .pointer {
   cursor: pointer;
 }
-
 
 /* Add a black background color to the top navigation */
 .topnav {
