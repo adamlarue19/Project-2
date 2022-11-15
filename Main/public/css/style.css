@@ -6,7 +6,7 @@ header,
   background-color: #282828;
 }
 
-h1 {
+#logo {
   position: absolute;
   padding: 3px;
   float: left;
@@ -14,7 +14,6 @@ h1 {
   margin-top: 10px;
   color: #82ca9f;
 }
-
 ul {
   width: auto;
   float: right;
@@ -92,7 +91,6 @@ h2 {
   width: 175px;
   margin-top: 25px;
 }
-
 
 .loginBtn {
   position: relative;
