@@ -199,3 +199,22 @@ tbody th {
   height: 400px;
   width: 80%;
 }
+
+.cRow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.cStyle {
+  display: flex;
+  justify-content: center;
+  border-width: 3px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.averages {
+  display: flex;
+  justify-content: center;
+}
