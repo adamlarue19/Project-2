@@ -13,10 +13,10 @@
 <body>
     <div class="main-container">
         <div class="left-container">
-            <div class="signup-form-container">
+            <div class="signup-form-container" id="signup-form-container">
                 <div class="form-header">
                     <h1>Hot Reels</h1>
-                    <p>Your new favorite fishing app</p>
+                    <p>Your new favorite fishing app!</p>
                 </div>
                 <form id="signup-form">
                     <div class="form-group">
@@ -39,11 +39,31 @@
                     <p class="form-message">Already have an account? <span class="login-here-span">Login here!</span></p>
                 </form>
             </div>
-            <div class="login-form-container hide"></div>
+            <div class="login-form-container hide" id="login-form-container">
+                <div class="form-header">
+                    <h1>Hot Reels</h1>
+                    <p>You're back! Catch anything good?</p>
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="signup-email">Email:</label>
+                        <input class="form-input" type="email" id="signup-email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for ="signup-password">Password:</label>
+                        <input class="form-input" type="password" id="signup-password" placeholder="Enter your password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" id="login-submit" value="Log in">
+                    </div>
+                    <p class="form-message">Don't have an account? <span class="signup-here-span">Create account!</span></p>
+                </form>
+            </div>
         </div>
         <div class="right-container">
             <img src="./images/manfishinglake.webp">
         </div>
     </div>
 </body>
+<script src="login.js"></script>
 </html>
