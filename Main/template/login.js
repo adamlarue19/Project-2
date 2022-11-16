@@ -7,8 +7,8 @@
 //     let li = `<td>${species} </td> <td>${length} </td>`
 //     tablebody.appendChild(li);
 // }
-let signupContainer = document.getElementById("signup-form-container");
-let loginContainer = document.getElementById("login-form-container");
+let signupContainer = document.getElementById("signup-container");
+let loginContainer = document.getElementById("login-container");
 
 let loginSpanClick = document.querySelector(".login-here-span");
 let signupSpanClick = document.querySelector(".signup-here-span");
