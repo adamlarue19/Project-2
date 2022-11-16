@@ -66,11 +66,8 @@
                     </thead>
                     <tbody>
                         <tr class="catch-data">
-                            <td>Smallmouth Bass</td>
-                            <td>14</td>
-                            <td>8</td>
-                            <td>Lake Michigan</td>
-                            <td><span class="delete-btn">&#10006;</span></td>
+                        
+                           
                         </tr>
                         <tr class="catch-data">
                             <td>Largemouth Bass</td>
@@ -103,7 +100,14 @@
                     </tbody>
                 </table>
             </div>
-            <div class="google-maps-container">ds</div>
+            <div class="google-maps-container">
+                 <div id="map" onload="initialize()"></div>
+
+  <div id="latlong">
+    <p>Latitude: <input size="20" type="text" id="latbox" name="lat" ></p>
+    <p>Longitude: <input size="20" type="text" id="lngbox" name="lng" ></p>
+  </div>
+            </div>
         </div>
     </section>
 
