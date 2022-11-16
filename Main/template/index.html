@@ -18,7 +18,7 @@
                 <h4>It's a beautiful day to go fishing. Good luck out there!</h4>
             </div>
             <div class="image-container">
-                <img src="./images/fisherman.png">
+                <img src="/images/fisherman.png">
             </div>
         </div>
     </section>
@@ -28,7 +28,7 @@
             <div class="widget">
                 <div class="widget-icon">
                     <div class="icon-container">
-                        <img src="./images/fish (4).png">
+                        <img src="/images/fish (4).png">
                     </div>
                 </div>
                 <div class="widget-text">
@@ -40,7 +40,7 @@
             <div class="widget">
                 <div class="widget-icon">
                     <div class="icon-container">
-                        <img src="./images/ruler (2).png">
+                        <img src="/images/ruler (2).png">
                     </div>
                 </div>
                 <div class="widget-text">
@@ -52,7 +52,7 @@
             <div class="widget">
                 <div class="widget-icon">
                     <div class="icon-container">
-                        <img src="./images/food-scale.png">
+                        <img src="/images/food-scale.png">
                     </div>
                 </div>
                 <div class="widget-text">
@@ -63,7 +63,7 @@
         </div>
     </section>
     <section>
-        <h4 class="section-title">Today's Catches</h4>
+        <h4 class="section-title">Today</h4>
         <div class="data-container">
             <div class="table-container">
                 <table>
@@ -118,26 +118,29 @@
             <div class="google-maps-container">ds</div>
         </div>
     </section>
+
     <!-- Add button container. -->
     <div class="button-container">
         <button type="button" class="add-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
             <img src="./images/plus (3).png">
         </button>
     </div>
-    <!-- Modal -->
-    <div class="modal fade " id="myModal">
+   
+    <!-- Bootstrap modal -->
+    <div class="modal" id="myModal">
+
         <div class="modal-dialog">
             <div class="modal-content">
     
                 <div class="modal-header">
-                    <h4 class="modal-title"></h4>
+                    <h4 class="modal-title">Modal Heading</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
     
                 <div class="modal-body">
                     <form action="">
                         <label for ="fish-select">Select the species:</label>
-                        <select name="fish" id="fish-select" autofocus>
+                        <select name="fish" id="fish-select">
                             <option value="">--Please choose an option--</option>
                             <option value="Gulf Sturgeon">Gulf Sturgeon</option>
                             <option value="Shortnose Sturgeon">Shortnose Sturgeon</option>
@@ -148,17 +151,13 @@
     
                         <label for ="fish-weight">Enter the weight: </label>
                         <input type="number" id="fish-weight">
-                        <label for ="fish-location">Enter the location:</label>
-                        <input type="text" id="fish-location">
-                        <input type="submit" id="submit">
+                        <input type="submit">
                     </form>
                 </div>
-                <div class="modal-footer"></div>
     
             </div>
         </div>
     </div>
-</main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </html>
