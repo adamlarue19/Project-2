@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Catch, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/',withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const catchData = await Catch.findAll({
@@ -50,7 +50,7 @@ router.get('/catch/:id', async (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to route
-router.get('/dashboard', withAuth, async (req, res) => {
+router.get('/dashboard', async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
