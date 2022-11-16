@@ -15,11 +15,10 @@
         <div class="banner">
             <div class="text-container">
                 <h1>Good morning, Michael</h1>
-                <h4>It's a beautiful day to go fishing. Good luck out there!</h4>
-                <!-- <button>Add a Catch</button> -->
+                <h4 class="message" id="message">It's a beautiful day to go fishing. Good luck out there!</h4>
             </div>
             <div class="image-container">
-                <img src="/images/fisherman.png">
+                <img src="./images/fisherman.png">
             </div>
         </div>
     </section>
@@ -29,11 +28,11 @@
             <div class="widget">
                 <div class="widget-icon">
                     <div class="icon-container">
-                        <img src="/images/fish (4).png">
+                        <img src="./images/fish (4).png">
                     </div>
                 </div>
                 <div class="widget-text">
-                    <h4 class="total-caught">Total Caught: 103 </h4>
+                    <h4 class="total-caught" id="total-caught">Total Caught: 103 </h4>
                     <p>The total amount of fish caught.</p>
                 </div>
             </div>
@@ -41,11 +40,11 @@
             <div class="widget">
                 <div class="widget-icon">
                     <div class="icon-container">
-                        <img src="/images/ruler (2).png">
+                        <img src="./images/ruler (2).png">
                     </div>
                 </div>
                 <div class="widget-text">
-                    <h4 class="average-length">Average Length: 14 </h4>
+                    <h4 class="average-length" id="average-length">Average Length: 14 </h4>
                     <p>The average length, in inches, of all fish caught.</p>
                 </div>
             </div>
@@ -53,18 +52,18 @@
             <div class="widget">
                 <div class="widget-icon">
                     <div class="icon-container">
-                        <img src="/images/food-scale.png">
+                        <img src="./images/food-scale.png">
                     </div>
                 </div>
                 <div class="widget-text">
-                    <h4 class="average-length">Average Weight: 8 </h4>
+                    <h4 class="average-weigth" id="average-weight">Average Weight: 8 </h4>
                     <p>The average weight, in pounds, of all fish caught.</p>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <h4 class="section-title">Today</h4>
+        <h4 class="section-title">Today's Catches</h4>
         <div class="data-container">
             <div class="table-container">
                 <table>
@@ -120,8 +119,8 @@
         </div>
     </section>
     <div class="button-container">
-        <button type="button" class="add-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-            <img src="/images/plus (3).png">
+        <button type="button" class="add-btn btn btn-primary" id="add-btn" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="./images/plus (3).png">
         </button>
     </div>
     <!-- Modal -->

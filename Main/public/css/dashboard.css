@@ -12,7 +12,7 @@ section{
     display:flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    width:85%;
+    width:90%;
     margin: 10px auto;
     background-color: rgb(242, 232, 220);
     border-radius:8px;
@@ -36,7 +36,7 @@ section{
     width:100%;
 }
 .section-title{
-    width: 80%;
+    width:90%;
     margin: 10px auto;
 }
 .widget-container{
@@ -44,7 +44,7 @@ section{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width:85%;
+    width:90%;
     margin: 0 auto;
     /* border:1px solid red; */
     border-radius:8px;
@@ -86,7 +86,7 @@ section{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 85%;
+    width:90%;
     margin: 10px auto;
     border-radius:8px;
     background-color: rgb(242, 232, 220);
@@ -154,11 +154,12 @@ tr th:nth-child(5) {
 }
 .delete-btn{
     font-size:0.80em;
+    cursor: pointer;
 }
 .button-container{
     position:fixed;
-    bottom:5%;
-    right:5%;
+    bottom:2%;
+    right:2%;
 }
 .button-container > button {
     width:55px;
