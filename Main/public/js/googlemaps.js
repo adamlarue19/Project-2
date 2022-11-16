@@ -1,33 +1,27 @@
+var map;
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 5,
-    center: { lat: 25.7617, lng: -80.1918 },
-  });
-  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
-  // receives the initial focus when tab is pressed. Use arrow keys to
-  // move between markers; press tab again to cycle through the map controls.
-  
+var myLatlng = new google.maps.LatLng(40.713956,-74.006653);
 
-  // Create an info window to share between markers.
- 
+var myOptions = {
+   zoom: 8,
+   center: { lat: 28.5384, lng: -81.3789 },
+   mapTypeId: google.maps.MapTypeId.ROADMAP
+   }
+map = new google.maps.Map(document.getElementById("map"), myOptions); 
 
-  // Create the markers.
+var marker = new google.maps.Marker({
+draggable: true,
+position: { lat: 28.5384, lng: -81.3789 }, 
+map: map,
+title: "Your location"
+});
 
-    const marker = new google.maps.Marker({
-      position:{ lat: 25.7617, lng: -80.1918 },
-      map: map,
-      draggable: true
-    });
+google.maps.event.addListener(marker, 'dragend', function (event) {
+   document.getElementById("latbox").value = event.latLng.lat();
+   document.getElementById("lngbox").value = event.latLng.lng();
+   console.log(event.latLng.lat())
+   console.log(event.latLng.lng())
+});
+console.log()
+};
 
-     const drag = google.maps.event.addListener(marker,'dragged', () => {
-      google.maps.event.addListener(marker, 'dragend', function (event) {
-        document.getElementById("latbox").value = this.getPosition().lat();
-        document.getElementById("lngbox").value = this.getPosition().lng();
-    });
-
-      console.log(lat, lng)
-    });
-    console.log(drag)
-  };
-
-window.initMap = initMap;
