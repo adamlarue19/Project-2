@@ -24,3 +24,4 @@ google.maps.event.addListener(marker, 'dragend', function (event) {
 });
 console.log()
 };
+
