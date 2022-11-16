@@ -151,3 +151,55 @@ tr th:nth-child(5) {
 .delete-btn{
     font-size:0.80em;
 }
+.button-container{
+    position:fixed;
+    bottom:2%;
+    right:2%;
+}
+.button-container > button {
+    width:55px;
+    height:55px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px 0px rgba(50,50,93,0.11) , 0px 1px 3px 0px rgba(0,0,0,0.08);
+    background-color: orange !important;
+    border:none;
+}
+button > img{
+    width:80%;
+}
+.button-container > button:hover{
+    background-color: rgb(221, 144, 0)!important;
+}
+.button-container > button:active{
+    transform: scale(0.95);
+    background-color: rgb(199, 129, 0)!important;
+}
+.modal-content{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.05em;
+    max-width:400px;
+    margin: 0 auto;
+}
+.modal-body{
+    /* border:1px solid red; */
+    padding:20px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    padding:0px 30px;
+    padding-bottom:10px;
+}
+#fish-select, #fish-length, #fish-weight, #fish-location{
+    margin:10px 0px;
+    padding:4px;
+}
+#fish-select{
+    padding:7px;
+}
+#submit{
+    width:75%;
+    margin: 10px auto;
+    padding:6px;
+    border-radius:4px;
+}
