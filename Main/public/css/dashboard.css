@@ -116,6 +116,7 @@ section{
 }
 .data-container{
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 90%;
     margin: 0 auto;
@@ -130,9 +131,15 @@ section{
     margin: 0 auto;
     /* border:1px solid blue; */
 }
-/* .google-maps-container{
+.google-maps-container{
     min-width:400px;   
-} */
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
+  
 
 table{
     margin:8px 0px;
@@ -310,6 +317,9 @@ form{
     width:300px;
     border-bottom-left-radius: 8px !important;
     border-bottom-right-radius: 8px !important;
+}
+.google-maps-container{
+    border:1px solid red;
 }
 
 /* Media Queries */

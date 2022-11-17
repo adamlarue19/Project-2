@@ -133,6 +133,13 @@
                     </tbody>
                 </table>
             </div>
+            <div class="google-maps-container">
+            <div id="map" onload="initialize()"></div>
+            <div id="latlong">
+                <p>Latitude: <input size="20" type="text" id="latbox" name="lat"></p>
+                <p>Longitude: <input size="20" type="text" id="lngbox" name="lng"></p>
+            </div>
+        </div>
         </div>
     </section>
     <div class="button-container">
@@ -207,8 +214,8 @@
     </div>
 
 
-{{!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap">
-</script> --}}
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap"></script>
+
   <script src="/js/googlemaps.js"></script>
   <script src="/js/dashboard.js"></script>
  {{#if logged_in}}
