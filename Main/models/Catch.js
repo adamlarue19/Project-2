@@ -27,15 +27,9 @@ Catch.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    lat: {
-      type: DataTypes.STRING,
-      allowNull: false
+    location: {
+      type: DataTypes.STRING
     },
-    lng: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-
     user_id: {
       type: DataTypes.INTEGER,
       references: {
