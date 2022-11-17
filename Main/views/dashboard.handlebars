@@ -182,14 +182,22 @@
                             
                             <div class="google-maps-container">
 
-                            <div id="map" onload="initialize()"></div>
-                            <div id="latlong">
-                                <p>Latitude: <input size="20" type="text" id="latbox" name="lat"></p>
-                                <p>Longitude: <input size="20" type="text" id="lngbox" name="lng"></p>
+                                <div id="map" onload="initialize()"></div>
+                                <div id="latlong">
+                                    <div>
+                                        <label for ="latbox">Latitude:</label>
+                                        <input size="20" type="text" id="latbox" name="lat">
+                                    </div>
+
+                                    <div>
+                                        <label for="lngbox">Longitude:</label>
+                                        <input size="20" type="text" id="lngbox" name="lng">
+                                    </div>
+
+                                </div>
                             </div>
 
                             <input type="submit" id="submit" value="Add Catch">
-
                             
                         </form>
                     </div>
