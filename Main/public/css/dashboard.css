@@ -182,9 +182,9 @@ tbody{
 td{
     font-size: 0.90em;
 }
-td:nth-of-type(5){
+/* td:nth-of-type(5){
     max-width:300px;
-}
+} */
 td:nth-of-type(6){
     text-align: center;
 }
@@ -194,7 +194,7 @@ td:nth-of-type(6){
 tr th:nth-child(1) {
     border-radius: 6px 0 0 0;
 }
-tr th:nth-child(6) {
+tr th:nth-child(7) {
     border-radius: 0 6px 0 0;
 }
 .delete-btn{
@@ -349,6 +349,13 @@ flex-direction: column;
 
 /* Media Queries */
 @media screen  and (max-width:700px){
+    td{
+        max-width: 80px;
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height: 50px;
+        padding:2px;
+    }
     .modal-content{
         margin-left:60px;
     }
