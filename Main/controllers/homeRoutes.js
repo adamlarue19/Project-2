@@ -81,5 +81,23 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get("/dashboard", async (req, res) => {
+  try {
+    const catchData = await Catch.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ["id", "species", "weight", "length", "location", "user_id"],
+        },
+      ],
+    });
+
+    const catches = catchData.map((data) => data.get({plain: true}));
+    console.log(catches);
+    
+  } catch (err){
+    res.status(500).json(err)
+  }
+});
 
 module.exports = router;
