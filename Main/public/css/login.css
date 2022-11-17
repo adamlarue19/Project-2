@@ -16,7 +16,7 @@ body{
 .main-container{
     background-color: white;
     padding:20px;
-    width:70%;
+    width:60%;
     /* border:1px solid red; */
     border-radius:10px;
     display:flex;
@@ -62,7 +62,7 @@ body{
 .form-header > h1{
     font-family: 'Cabin', sans-serif;
     font-weight: lighter;
-    font-size: 2.85em;
+    font-size: 2.95em;
     margin-bottom:10px;
 }
 form{
@@ -76,6 +76,7 @@ form{
     flex-direction: column;
     width:80%;
     margin: 0 auto;
+    font-size:1.05em;
 }
 label{
     margin:10px 0px;
@@ -83,13 +84,16 @@ label{
 .form-input{
     padding:9px;
     border-radius:6px;
-    border:1px solid gainsboro;
+    border:1px solid rgb(116, 136, 86);
 }
 #signup-submit, #login-submit{
     cursor:pointer;
     margin:20px 0px;
-    padding:7px;
+    padding:10px;
     border-radius: 8px;
+    background-color: rgb(116, 136, 86);
+    border:none;
+    color:white;
 }
 .form-message{
     width:75%;
@@ -104,7 +108,7 @@ label{
     text-decoration: underline;
 }
 .login-container{
-    padding:23px 0px;
+    padding:26px 0px;
     padding-bottom:20px;
     margin:10px 0px;
 }

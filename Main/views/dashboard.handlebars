@@ -131,12 +131,12 @@
         </div>
     </section>
     <div class="button-container">
-        <button type="button" class="add-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        <button type="button" class="add-btn btn btn-primary" id="modal-btn" data-bs-toggle="modal" data-bs-target="#myModal">
             <img src="./images/plus (3).png">
         </button>
     </div>
     <!-- Modal -->
-    <div class="modal fade " id="myModal">
+    {{!-- <div class="modal fade " id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
     
@@ -148,13 +148,17 @@
                 <div class="modal-body">
                     <form action="">
                         <label for ="fish-select">Enter the species:</label>
-                        <input type="text" name="fish" id="fish-select">
+                        <input type="text" name="fish" id="fish-input">
+
+                        <label for="date">Enter the date: </label>
+                        <input type="date" id="date">
                 
                         <label for ="fish-length">Enter the length:</label>
                         <input type="number" id="fish-length">
     
                         <label for ="fish-weight">Enter the weight: </label>
                         <input type="number" id="fish-weight">
+
                         <label for ="fish-location">Enter the location:</label>
                         <input type="text" id="fish-location">
                         <input type="submit" id="submit">
@@ -164,13 +168,44 @@
     
             </div>
         </div>
+    </div> --}}
+    <div class="overlay" id="overlay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                    <div class="modal-header">
+                        <span id="close-btn">&#10006;</span>
+                    </div>
+                    <h4 class="modal-title">Share a Catch</h4>
+                    <div class="modal-body">
+                        <form action="">
+                            <label for ="fish-select">Enter the species:</label>
+                            <input type="text" name="fish" id="fish-input">
+    
+                            <label for="date">Enter the date: </label>
+                            <input type="date" id="date" placeholder="">
+                    
+                            <label for ="fish-length">Enter the length:</label>
+                            <input type="number" id="fish-length">
+        
+                            <label for ="fish-weight">Enter the weight: </label>
+                            <input type="number" id="fish-weight">
+    
+                            <label for ="fish-location">Enter the location:</label>
+                            <input type="text" id="fish-location">
+                            <input type="submit" id="submit" value="Add Catch">
+                        </form>
+                    </div>
+                    
+            </div>
+        </div>
     </div>
 
 
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap">
-</script>
+{{!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap">
+</script> --}}
   <script src="/js/googlemaps.js"></script>
-
+  <script src="/js/dashboard.js"></script>
  {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
