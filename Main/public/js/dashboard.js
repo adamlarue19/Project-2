@@ -2,7 +2,7 @@
 let submitFishBtn = document.getElementById('submit-fish-btn');
 
 // function to store inputed data
-const newFishHandler = async (e) => {
+const newCatchHandler = async (e) => {
     let species = document.getElementById('fish-select').value.trim();
     let length = document.getElementById('fish-length').value.trim();
     let weight = document.getElementById('fish-weight').value.trim();
@@ -25,7 +25,19 @@ const newFishHandler = async (e) => {
     }
     }
 };
+// function to get the catch data stored and display it on the page
+const getCatchData = async (e) => {
+    e.preventDefault();
+    const response = await fetch ('/api/catches',{
+        method: 'GET',
+        body: JSON.stringify({ species, length, weight, lat, lng }),
+        headers: { 'Content-Type': 'application/json' },
+    })
 
-submitFishBtn.addEventListener('click', newFishHandler);
+}
+
+
+
+submitFishBtn.addEventListener('click', newCatchHandler);
 
 

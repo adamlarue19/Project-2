@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { Catch, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
+ 
   try {
     // Get all projects and JOIN with user data
     const catchData = await Catch.findAll({
@@ -11,6 +12,7 @@ router.get('/', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        
       ],
     });
 
