@@ -44,10 +44,31 @@ const signupFormHandler = async (event) => {
   }
 };
 
-document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
+let loginSubmit = document.getElementById("login-submit");
+loginSubmit.addEventListener("click", loginFormHandler)
 
-document
-  .querySelector('.signup-form')
-  .addEventListener('submit', signupFormHandler);
+let signupSubmit = document.getElementById("signup-submit");
+signupSubmit.addEventListener("click", signupFormHandler);
+
+// document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+
+// document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+
+// Variables and functions to switch between sign up and login screen.
+let signupContainer = document.getElementById("signup-container");
+let loginContainer = document.getElementById("login-container");
+
+let loginSpanClick = document.querySelector(".login-here-span");
+let signupSpanClick = document.querySelector(".signup-here-span");
+
+function displayLoginForm (){
+    loginContainer.classList.remove("hide");
+    signupContainer.classList.add("hide")
+};
+
+function displaySignUpForm () {
+    loginContainer.classList.add("hide");
+    signupContainer.classList.remove("hide")
+}
+loginSpanClick.addEventListener("click", displayLoginForm);
+signupSpanClick.addEventListener("click", displaySignUpForm);

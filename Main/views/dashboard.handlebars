@@ -1,3 +1,17 @@
+ <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        <span role="img" aria-label="money">🎣</span>
+        <a href="/">Hot Reels</a>
+      </h1>
+      <nav>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
+    </header>
 
  <section>
         <div class="banner">
@@ -125,3 +139,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap">
 </script>
   <script src="/js/googlemaps.js"></script>
+
+ {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
