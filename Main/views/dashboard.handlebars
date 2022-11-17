@@ -1,6 +1,11 @@
+ <style>
+    body{
+        display:block !important;
+        background-color: white  !important;
+    }
+ </style>
  <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <span role="img" aria-label="money">🎣</span>
         <a href="/">Hot Reels</a>
       </h1>
       <nav>
@@ -65,13 +70,14 @@
         </div>
     </section>
     <section>
-        <h4 class="section-title">Today</h4>
+        <h4 class="section-title">Catch History</h4>
         <div class="data-container">
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
                             <th>Species</th>
+                            <th>Date</th>
                             <th>Length</th>
                             <th>Weight</th>
                             <th>Location</th>
@@ -80,11 +86,16 @@
                     </thead>
                     <tbody>
                         <tr class="catch-data">
-                        
-                           
+                            <td>Largemouth Bass</td>
+                            <td>11/16</td>
+                            <td>14</td>
+                            <td>8</td>
+                            <td>Lake Ontario</td>
+                            <td><span class="delete-btn">&#10006;</span></td>
                         </tr>
                         <tr class="catch-data">
                             <td>Largemouth Bass</td>
+                            <td>11/16</td>
                             <td>14</td>
                             <td>8</td>
                             <td>Lake Ontario</td>
@@ -92,6 +103,7 @@
                         </tr>
                         <tr class="catch-data">
                             <td>Bullhead Brown Catfish</td>
+                            <td>11/16</td>
                             <td>14</td>
                             <td>8</td>
                             <td>Lake Huron</td>
@@ -99,6 +111,7 @@
                         </tr>
                         <tr class="catch-data">
                             <td>Bullhead Brown Catfish</td>
+                            <td>11/16</td>
                             <td>14</td>
                             <td>8</td>
                             <td>Lake Ontario</td>
@@ -106,6 +119,7 @@
                         </tr>
                         <tr class="catch-data">
                             <td>Largemouth Bass</td>
+                            <td>11/16</td>
                             <td>14</td>
                             <td>8</td>
                             <td>Lake Superior</td>
@@ -114,29 +128,46 @@
                     </tbody>
                 </table>
             </div>
-            <div class="google-maps-container">
-                 <div id="map" onload="initialize()"></div>
-
-  <div id="latlong">
-    <p>Latitude: <input size="20" type="text" id="latbox" name="lat" ></p>
-    <p>Longitude: <input size="20" type="text" id="lngbox" name="lng" ></p>
-  </div>
-            </div>
         </div>
     </section>
+    <div class="button-container">
+        <button type="button" class="add-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            <img src="./images/plus (3).png">
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade " id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+    
+                <div class="modal-body">
+                    <form action="">
+                        <label for ="fish-select">Enter the species:</label>
+                        <input type="text" name="fish" id="fish-select">
+                
+                        <label for ="fish-length">Enter the length:</label>
+                        <input type="number" id="fish-length">
+    
+                        <label for ="fish-weight">Enter the weight: </label>
+                        <input type="number" id="fish-weight">
+                        <label for ="fish-location">Enter the location:</label>
+                        <input type="text" id="fish-location">
+                        <input type="submit" id="submit">
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+    
+            </div>
+        </div>
+    </div>
 
-    <h3>My Google Maps Demo</h3>
 
-  <div id="map" onload="initialize()"></div>
-
-  <div id="latlong">
-    <p>Latitude: <input size="20" type="text" id="latbox" name="lat" ></p>
-    <p>Longitude: <input size="20" type="text" id="lngbox" name="lng" ></p>
-  </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap">
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsR_rdIwpy2ytdRAFoYmU1hlNCRcZd3e4&callback=initMap">
 </script>
   <script src="/js/googlemaps.js"></script>
 
