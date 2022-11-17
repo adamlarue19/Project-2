@@ -85,51 +85,25 @@
                             <th>Date</th>
                             <th>Length</th>
                             <th>Weight</th>
-                            <th>Location</th>
+                            <th>Lat</th>
+                            <th>Lng</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
+                        {{#if Catches.length}}
+                        {{#each Catches as | catch |}}
                         <tr class="catch-data">
-                            <td>Largemouth Bass</td>
-                            <td>11/16</td>
-                            <td>14</td>
-                            <td>8</td>
-                            <td>Lake Ontario</td>
+                            <td>{{catch.species}}</td>
+                            <td>{{catch.date_created}}</td>
+                            <td>{{catch.length}}</td>
+                            <td>{{catch.weight}}</td>
+                            <td>{{catch.lat}}</td>
+                            <td>{{catch.lng}}</td>
                             <td><span class="delete-btn">&#10006;</span></td>
                         </tr>
-                        <tr class="catch-data">
-                            <td>Largemouth Bass</td>
-                            <td>11/16</td>
-                            <td>14</td>
-                            <td>8</td>
-                            <td>Lake Ontario</td>
-                            <td><span class="delete-btn">&#10006;</span></td>
-                        </tr>
-                        <tr class="catch-data">
-                            <td>Bullhead Brown Catfish</td>
-                            <td>11/16</td>
-                            <td>14</td>
-                            <td>8</td>
-                            <td>Lake Huron</td>
-                            <td><span class="delete-btn">&#10006;</span></td>
-                        </tr>
-                        <tr class="catch-data">
-                            <td>Bullhead Brown Catfish</td>
-                            <td>11/16</td>
-                            <td>14</td>
-                            <td>8</td>
-                            <td>Lake Ontario</td>
-                            <td><span class="delete-btn">&#10006;</span></td>
-                        </tr>
-                        <tr class="catch-data">
-                            <td>Largemouth Bass</td>
-                            <td>11/16</td>
-                            <td>14</td>
-                            <td>8</td>
-                            <td>Lake Superior</td>
-                            <td><span class="delete-btn">&#10006;</span></td>
-                        </tr>
+                        {{/each}}
+                        {{/if}}
                     </tbody>
                 </table>
             {{!-- </div>

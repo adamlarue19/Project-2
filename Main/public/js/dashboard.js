@@ -1,4 +1,3 @@
-
 const newFormHandler = async (e) => {
     e.preventDefault();
 
@@ -6,16 +5,17 @@ const newFormHandler = async (e) => {
     let date = document.getElementById("date").value.trim();
     let length = document.getElementById("fish-length").value.trim();
     let weight = document.getElementById("fish-weight").value.trim();
-    let location = document.getElementById("fish-location").value.trim();
+    let lat = document.getElementById('latbox').value.trim();
+    let lng = document.getElementById('lngbox').value.trim();
 
-    if(species && date && length && weight && location){
+    if(species && date && length && weight && lat && lng){
         const response = await fetch("/api/catches", {
             method: 'POST',
-            body: JSON.stringify({ species, date, length, weight, location }),
+            body: JSON.stringify({ species, date, length, weight, lat, lng }),
             headers: {'Content-Type': 'application/json'},
         })
         if (response.ok){
-            console.log(species, date, length, weight, location);
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }

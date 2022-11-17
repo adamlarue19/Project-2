@@ -6,22 +6,18 @@ router.get('/', withAuth, async (req, res) => {
  
   try {
     // Get all projects and JOIN with user data
-    const catchData = await Catch.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-        
-      ],
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Catch }],
     });
 
-    // Serialize data so the template can read it
-    const projects = catchData.map((project) => project.get({ plain: true }));
 
+    
+    const user = userData.get({ plain: true });
+    console.log(user)
     // Pass serialized data and session flag into template
     res.render('dashboard', { 
-      projects, 
+      ...user, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -61,7 +57,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
-
+    console.log(user)
     res.render('dashboard', {
       ...user,
       logged_in: true
