@@ -133,12 +133,15 @@ section{
 }
 .google-maps-container{
     min-width:300px;  
-    margin-top:8px; 
+    margin-top:12px; 
+    margin-bottom:-9px !important;
 }
 
 #map {
-    height: 300px;
+    height: 200px;
     width: 94%;
+    border-radius:8px;
+    margin-bottom:-9px !important;
   }
   
 
@@ -238,17 +241,38 @@ form{
     padding:0px 30px;
     padding-bottom:10px;
 }
+label{
+    font-size:0.90em;
+}
 #fish-input, #date, #fish-length, #fish-weight, #fish-location{
-    padding:6px;
+    padding:4px;
     border:1px solid rgb(116, 136, 86) !important;
     border-radius: 6px;
     font-size: 1em;
+    margin:-2px 0px;
 }
 /* #fish-select{
     padding:7px;
 } */
+#latlong > div{
+display:flex;
+flex-direction: column;
+ margin:5px 0px;
+ padding:0px !important;
+ /* border:1px solid red; */
+}
+#latbox, #lngbox{
+    padding:6px;
+    border:1px solid rgb(116, 136, 86) !important;
+    border-radius: 6px;
+    width:93%;
+    margin-top:-6px !important;
+}
+#latlong > div:nth-of-type(2){
+    margin-top:-5px;
+}
 #submit{
-    width:75%;
+    width:80%;
     margin: 20px auto !important;
     padding:10px;
     border-radius:4px;
@@ -256,6 +280,7 @@ form{
     border:none;
     color:white;
     cursor: pointer;
+    margin-left:24px !important;
 }
 .overlay{
     display:none;
@@ -283,7 +308,7 @@ form{
     max-width:350px;
     width:324px;
     border-bottom:1px solid gainsboro;
-    margin-bottom:-2px;
+    margin-bottom:-10px;
 }
 #close-btn{
     cursor: pointer;
@@ -297,7 +322,8 @@ form{
     font-weight: lighter;
     font-size: 1.2em;
     padding-top:20px !important;
-    margin-bottom:-20px !important;
+    margin-bottom:-40px !important;
+    z-index:1000px;
 }
 .modal-body{
     /* border:1px solid green; */
@@ -307,7 +333,6 @@ form{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     /* border:1px solid blue; */
-    padding-top:0px !important;
 }
 .modal-footer{
     padding-bottom:10px !important;
@@ -318,14 +343,14 @@ form{
     border-bottom-left-radius: 8px !important;
     border-bottom-right-radius: 8px !important;
 }
-.google-maps-container{
+/* .google-maps-container{
     border:1px solid red;
-}
+} */
 
 /* Media Queries */
 @media screen  and (max-width:700px){
     .modal-content{
-        margin-left:80px;
+        margin-left:60px;
     }
 
 }
