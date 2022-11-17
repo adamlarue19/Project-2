@@ -318,9 +318,6 @@ form{
     border-bottom-left-radius: 8px !important;
     border-bottom-right-radius: 8px !important;
 }
-.google-maps-container{
-    border:1px solid red;
-}
 
 /* Media Queries */
 @media screen  and (max-width:700px){
