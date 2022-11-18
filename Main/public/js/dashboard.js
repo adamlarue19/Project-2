@@ -22,6 +22,28 @@ const newFormHandler = async (e) => {
     }
 
 }
+let tableContainer = document.querySelector(".table-container");
+let dataContainer = document.querySelector(".data-container");
+
+let tableBody = document.getElementById("table-body");
+let tableContents = tableBody.children.length;
+console.log(tableContents);
+let tds = document.querySelectorAll("td")
+
+
+function tableHandler(){
+    if(tableContents === 0){
+        let p = document.createElement("p");
+        p.textContent = "Your catch history is currently empty. Click the button to add a new catch."
+        dataContainer.appendChild(p);
+        tableContainer.style.display = "none";
+        console.log("Working!")
+    }else{
+        tableContainer.style.display = "block";
+        console.log("Not working!")
+    }
+};
+tableHandler();
 
 let submitBtn = document.getElementById("submit");
 

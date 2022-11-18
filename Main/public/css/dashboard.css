@@ -123,7 +123,11 @@ section{
     border-radius:8px;
     background-color: rgb(242, 232, 220);
     padding:35px 0px;
-    /* border:1px solid red; */
+}
+.data-container > p {
+    font-size:1.15em;
+    text-align: center;
+    padding:0px 10px;
 }
 .table-container{
     width:70%;

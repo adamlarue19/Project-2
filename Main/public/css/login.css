@@ -49,6 +49,9 @@ body{
 .hide{
     display:none;
 }
+.signup-container{
+    margin-right:14px !important;
+}
 .signup-container, .login-container{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
@@ -108,7 +111,9 @@ label{
     text-decoration: underline;
 }
 .login-container{
-    padding:26px 0px;
+    /* border:1px solid red; */
+    padding:24px 0px;
+    margin-right:14px !important;
     padding-bottom:20px;
     margin:10px 0px;
 }
